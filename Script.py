@@ -11,8 +11,9 @@ def is_enabled(value, default):
         return default
 
 class script(object):
-    START_TXT = environ.get("START_TXT" = """ʜᴇʏ {} 👋,    
+    START_TXT = """ʜᴇʏ {} 👋,    
 ᴍʏ ɴᴀᴍᴇ ɪꜱ <a href=https://t.me/{}>{}</a> 🕷!!
+
 ɪ'ᴍ ᴀɴ ᴀᴜᴛᴏꜰɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴍᴀɴʏ ꜰᴇᴀᴛᴜʀᴇꜱ!!
 ʏᴏᴜ ᴄᴀɴ ᴀᴅᴅ ᴍᴇ ᴀꜱ ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ 
 ɪ ᴘʀᴏᴠɪᴅᴇꜱ ᴡɪᴅᴇʀᴀɴɢᴇ ᴏꜰ ᴍᴏᴠɪᴇꜱ & ꜱᴇʀɪᴇꜱ!
