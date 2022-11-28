@@ -837,7 +837,7 @@ async def manual_filters(client, message, text=False):
                                 reply_to_message_id=reply_id
                             )
                             await asyncio.sleep(30)
-                            await mm.edit(f"\n \n⚙️ Result  Closed ️")
+                            await dd.edit(f"\n \n⚙️ Result  Closed ️")
                     elif btn == "[]":
                         await client.send_cached_media(
                             group_id,
