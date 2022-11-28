@@ -49,7 +49,7 @@ CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "</b>📁 {file_name}</
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "</b>📁 {file_name}</b> \n</b>🎞️ SIZE : {file_size}</b> \n•────•────•────• \n</b>✯ JOIN ➪ [MOVIES GROUP 🎬](https://t.me/+l3_xaeVV6x1lMjk5)</b> \n</b>✯ JOIN ➪ [MOVIE CHANNEL 🎥](https://t.me/+eWutUQKG6744YmVh)</b> \n•────•────•────• \n★ᴊᴏɪɴ ★ ꜱʜᴀʀᴇ ★ ꜱᴜᴘᴘᴏʀᴛ")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>📁 Title</b> : <a href=>{title}</a> \n<b>📆 Year</b> : <a href=/releaseinfo>{year}</a> \n<b>⭐ Rating</b> : <a href=/ratings>{rating}</a>/10 \n<b>🔤 Language</b> : {languages}</code> ✯ ━━━━━━ ➿ ━━━━━━ ✯ \n<b>©️ GROUP</b> :[MOVIES CLUB 🎬](https://t.me/+l3_xaeVV6x1lMjk5)")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
-SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "False"), True)
+SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
