@@ -21,9 +21,9 @@ class script(object):
     HELP_TXT = """ʜᴇʏ {} 👋
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """🎭 My Name: {} 
-👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/alluvichu>Dark Hunter ᡧ</a>
-📝 ʟᴀɴɢᴜᴀɢᴇ : Pyrogram
-📚 ꜰʀᴀᴍᴇᴡᴏʀᴋ : Python 3
+👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/alluvichu>Dark Hunter ᡧ</a>\n
+📝 ʟᴀɴɢᴜᴀɢᴇ : Pyrogram\n
+📚 ꜰʀᴀᴍᴇᴡᴏʀᴋ : Python 3\n
 📡 ʜᴏsᴛᴇᴅ ᴏɴ : VPS\n
 📢 ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/moviesclubupdates><b></b>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>\n
 🌟 ᴠᴇʀsɪᴏɴ : ᴠ 4.0\n</b></i>"""
