@@ -826,7 +826,6 @@ async def manual_filters(client, message, text=False):
                                 disable_web_page_preview=True,
                                 reply_to_message_id=reply_id)
                             await asyncio.sleep(30)
-                            await dd.edit(f"\n \n⚙️ Result  Closed ️")
                         else:
                             button = eval(btn)
                             await client.send_message(
@@ -837,7 +836,6 @@ async def manual_filters(client, message, text=False):
                                 reply_to_message_id=reply_id
                             )
                             await asyncio.sleep(30)
-                            await dd.edit(f"\n \n⚙️ Result  Closed ️")
                     elif btn == "[]":
                         await client.send_cached_media(
                             group_id,
