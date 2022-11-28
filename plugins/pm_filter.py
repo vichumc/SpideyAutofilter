@@ -721,12 +721,8 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = <b>📁 Title</b> : **<a href=>['title']</a>**
-<b>📆 Year</b> : **<a href=/releaseinfo>['year']</a>**
-<b>⭐ Rating</b> : **<a href=/ratings>['rating']</a>/10**
-<b>🔤 Language</b> : **["languages"]</code>**
-✯ ━━━━━━ ➿ ━━━━━━ ✯
-<b>©️ GROUP</b> :  [MOVIES CLUB 🎬](https://t.me/+l3_xaeVV6x1lMjk5)
+        cap = 📁 Title : <a href=>['title']</a> 📆 Year : **<a href=/releaseinfo>['year']</a> ⭐ Rating : **<a href=/ratings>['rating']</a>/10**
+🔤 Language : ["languages"]</code> ✯ ━━━━━━ ➿ ━━━━━━ ✯ ©️ GROUP : [MOVIES CLUB 🎬](https://t.me/+l3_xaeVV6x1lMjk5)
     if imdb and imdb.get('poster'):
         try:
             hehe =  await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
