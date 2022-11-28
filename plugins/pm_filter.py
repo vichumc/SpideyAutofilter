@@ -680,7 +680,7 @@ async def auto_filter(client, msg, spoll=False):
         req = message.from_user.id if message.from_user else 0
         btn.append(
             [InlineKeyboardButton(text=f"🗓 1/{math.ceil(int(total_results) / 10)}", callback_data="pages"),
-             InlineKeyboardButton(text="𝗡𝗲𝘅𝘁 ⏩", callback_data=f"next_{req}_{key}_{offset}")]
+             InlineKeyboardButton(text="NEXT ⏩", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
@@ -721,7 +721,12 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Here is What I Found For Your Query {search}"
+        cap = <b>📁 Title</b> : **<a href=>['title']</a>**
+<b>📆 Year</b> : **<a href=/releaseinfo>['year']</a>**
+<b>⭐ Rating</b> : **<a href=/ratings>['rating']</a>/10**
+<b>🔤 Language</b> : **["languages"]</code>**
+✯ ━━━━━━ ➿ ━━━━━━ ✯
+<b>©️ GROUP</b> :  [MOVIES CLUB 🎬](https://t.me/+l3_xaeVV6x1lMjk5)
     if imdb and imdb.get('poster'):
         try:
             hehe =  await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
@@ -787,8 +792,8 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
-        await asyncio.sleep(8)
+        k = await msg.reply("SPELLING NOT CORRECT‼️ \nCLICK CORRECT MOVIE NAME FROM BELOW 👇")
+        await asyncio.sleep(20)
         await k.delete()
         return
     SPELL_CHECK[msg.id] = movielist
@@ -800,8 +805,8 @@ async def advantage_spell_chok(msg):
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
     await msg.reply("SPELLING NOT CORRECT‼️ \nCLICK CORRECT MOVIE NAME FROM BELOW 👇", reply_markup=InlineKeyboardMarkup(btn))
-    await asyncio.sleep(30)
-    await k.delete(30)
+    await asyncio.sleep(20)
+    await k.delete(20)
 
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
