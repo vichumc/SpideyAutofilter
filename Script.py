@@ -21,7 +21,7 @@ class script(object):
 🖥 ᴄᴏɴᴛʀᴏʟʟᴇᴅ ʙʏ @Alluvichu 🤩"""
     HELP_TXT = """ʜᴇʏ {} 👋
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
-    ABOUT_TXT = """🎭 My Name: {} 
+    ABOUT_TXT = """🎭 My Name: {}\n
 👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/alluvichu>Dark Hunter ᡧ</a>\n
 📝 ʟᴀɴɢᴜᴀɢᴇ : Pyrogram\n
 📚 ꜰʀᴀᴍᴇᴡᴏʀᴋ : Python 3\n
