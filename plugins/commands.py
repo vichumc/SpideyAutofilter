@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🤖 𝚄𝚙𝚍𝚊𝚝𝚎𝚜', url='https://t.me/GreyMatter_Bots')
+                InlineKeyboardButton('📢 Updates Channel 📢', url='https://t.me/moviesclubupdates')
             ],
             [
-                InlineKeyboardButton('ℹ️ 𝙷𝚎𝚕𝚙', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('👀 Help 👀', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -44,7 +44,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('🔰 Add me to your Group 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚡ Main Channel ⚡', url='https://t.me/+eWutUQKG6744YmVh'),
+            InlineKeyboardButton('📁 Main Channel 📁', url='https://t.me/+eWutUQKG6744YmVh'),
             InlineKeyboardButton('😎 Owner 😎', url='https://t.me/alluvichu')
             ],[
             InlineKeyboardButton('👀 Help 👀', callback_data='help'),
@@ -90,7 +90,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('🔰 Add me to your Group 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚡ Main Channel ⚡', url='https://t.me/+eWutUQKG6744YmVh'),
+            InlineKeyboardButton('📁 Main Channel 📁', url='https://t.me/+eWutUQKG6744YmVh'),
             InlineKeyboardButton('😎 Owner 😎', url='https://t.me/alluvichu')
             ],[
             InlineKeyboardButton('👀 Help 👀', callback_data='help'),
