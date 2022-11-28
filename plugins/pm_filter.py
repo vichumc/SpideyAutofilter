@@ -799,9 +799,9 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?",
-                    reply_markup=InlineKeyboardMarkup(btn))
-
+    await msg.reply("SPELLING NOT CORRECT‼️ \nCLICK CORRECT MOVIE NAME FROM BELOW 👇", reply_markup=InlineKeyboardMarkup(btn))
+    await asyncio.sleep(30)
+    await k.delete(30)
 
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
@@ -825,6 +825,8 @@ async def manual_filters(client, message, text=False):
                                 reply_text, 
                                 disable_web_page_preview=True,
                                 reply_to_message_id=reply_id)
+                            await asyncio.sleep(200)
+                            await mm.edit(f"\n \n⚙️ Result  Closed ️")
                         else:
                             button = eval(btn)
                             await client.send_message(
@@ -841,6 +843,8 @@ async def manual_filters(client, message, text=False):
                             caption=reply_text or "",
                             reply_to_message_id=reply_id
                         )
+                        await asyncio.sleep(200)
+                        await dd.edit(f"\n \n⚙️ Result  Closed ️")
                     else:
                         button = eval(btn)
                         await message.reply_cached_media(
