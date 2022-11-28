@@ -24,9 +24,6 @@ async def start(client, message):
         buttons = [
             [
                 InlineKeyboardButton('📢 Updates Channel 📢', url='https://t.me/moviesclubupdates')
-            ],
-            [
-                InlineKeyboardButton('👀 Help 👀', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -42,10 +39,10 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('🔰 Add me to your Group 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ Add me to your Group ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('📁 Main Channel 📁', url='https://t.me/+eWutUQKG6744YmVh'),
-            InlineKeyboardButton('😎 Owner 😎', url='https://t.me/alluvichu')
+            InlineKeyboardButton('🧘‍ Owner 🧘‍', url='https://t.me/alluvichu')
             ],[
             InlineKeyboardButton('👀 Help 👀', callback_data='help'),
             InlineKeyboardButton('🤔 About 🤔', callback_data='about')
@@ -88,10 +85,10 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('🔰 Add me to your Group 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ Add me to your Group ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('📁 Main Channel 📁', url='https://t.me/+eWutUQKG6744YmVh'),
-            InlineKeyboardButton('😎 Owner 😎', url='https://t.me/alluvichu')
+            InlineKeyboardButton('🧘‍ Owner 🧘‍', url='https://t.me/alluvichu')
             ],[
             InlineKeyboardButton('👀 Help 👀', callback_data='help'),
             InlineKeyboardButton('🤔 About 🤔', callback_data='about')
