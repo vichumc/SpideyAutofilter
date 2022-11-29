@@ -50,7 +50,7 @@ BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "</b>📁 {file_name}</b>
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "**📁 Title : <a href=>{title}** | **📆 Year : <a href=/releaseinfo>{year}** | **⭐ Rating : <a href=/ratings>{rating}</a>/10** | **🔤 Language : {languages}</code>** \n✯ ━━━━━━ ➿ ━━━━━━ ✯ **©️ GROUP :[MOVIES CLUB 🎬](https://t.me/+l3_xaeVV6x1lMjk5)**")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
-MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
+MAX_LIST_ELM = environ.get("MAX_LIST_ELM", False)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
