@@ -45,12 +45,9 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'greymatters_bots_discussion')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "**📁 {file_name}</b>\n** **🎞️ SIZE : {file_size}**\n •────•────•────• \n**✯ JOIN ➪ [MOVIE GROUP 🎬](https://t.me/+l3_xaeVV6x1lMjk5)**\n **✯ JOIN ➪ [MOVIE CHANNEL 🎥](https://t.me/+eWutUQKG6744YmVh)**\n •────•────•────•\n **★ᴊᴏɪɴ ★ ꜱʜᴀʀᴇ ★ ꜱᴜᴘᴘᴏʀᴛ**\n")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "**📁 {file_name}</b>\n** **🎞️ SIZE : {file_size}**\n •────•────•────• \n**✯ JOIN ➪ [MOVIE GROUP 🎬](https://t.me/+l3_xaeVV6x1lMjk5)**\n **✯ JOIN ➪ [MOVIE CHANNEL 🎥](https://t.me/+eWutUQKG6744YmVh)**\n •────•────•────•\n **★ ᴊᴏɪɴ ★ ꜱʜᴀʀᴇ ★ ꜱᴜᴘᴘᴏʀᴛ**\n")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "</b>📁 {file_name}</b> </b>🎞️ SIZE : {file_size}</b> •────•────•────• \n</b>✯ JOIN ➪ [MOVIES GROUP 🎬](https://t.me/+l3_xaeVV6x1lMjk5)</b> \n</b>✯ JOIN ➪ [MOVIE CHANNEL 🎥](https://t.me/+eWutUQKG6744YmVh)</b> \n•────•────•────• \n★ᴊᴏɪɴ ★ ꜱʜᴀʀᴇ ★ ꜱᴜᴘᴘᴏʀᴛ")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>🏷 Title</b>: <a href={url}>{title}</a>
-🎭 Genres: {genres}
-📆 Year: <a href={url}/releaseinfo>{year}</a>
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", False)
